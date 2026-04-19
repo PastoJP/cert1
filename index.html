@@ -1,34 +1,110 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport"
- content="width=device-width, initial-scale=1.0">
- <title>Portafolio de jairo</title>
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio de Jairo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- =========================
+       HEADER / NAVBAR
+  ========================== -->
+  <header>
+    <nav class="navbar">
+
+      <div class="logo">
+        <div class="logo-cuadro">JJ</div>
+        <span class="logo-texto">Jairo Jaramillo</span>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- =========================
+       MAIN
+  ========================== -->
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="sobre-mi" class="hero">
+      <div class="hero-contenedor">
+
+        <article class="hero-texto">
+          <h1>Hola, soy <span>Jairo Jaramillo</span></h1>
+
+          <p class="subtitulo">Estudiante de ingeniería en ciberseguridad</p>
+          <p>
+            Me agrada el desarrollo de paginas web
+          </p>
+          <p>
+            Actualmente estoy aprendiendo <em>HTML y CSS</em>,
+            con el objetivo de ser capaz de desarrollar una pagina web completa.
+          </p>
+        </article>
+
+        <aside class="hero-imagen">
+          <img src="https://drive.google.com/thumbnail?id=1ULrWr68bPoAlWd5zt4iY8VjedOWagIis&sz=w1000" alt="Foto de perfil">
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         SOBRE MI
+    ========================== -->
+    <section class="sobre-info">
+
+      <!-- TITULO -->
+      <div class="titulo-seccion">
+        <h2>Sobre Mí</h2>
+        <p>Conóceme un poco más</p>
+      </div>
+
+      <div class="sobre-contenedor">
+
+        <article class="texto">
+          <p>
+            <strong>Mi nombre es Jairo</strong> y soy estudiante de ingeniería en ciberseguridad.
+          </p>
+
+          <p>
+            Me apasiona la tecnología, el desarrollo web y la seguridad informática.
+          </p>
+
+          <p>
+            Actualmente me encuentro <em>aprendiendo nuevas tecnologías</em> para mejorar mis habilidades.
+          </p>
+
+          <blockquote>
+            "El único modo de hacer un gran trabajo es amar lo que haces." — Steve Jobs
+          </blockquote>
+        </article>
+
+        <aside class="datos">
+          <h3>Datos Personales</h3>
+          <p><strong>Edad:</strong> 20 años</p>
+          <p><strong>Ciudad:</strong> Coronel, Chile</p>
+          <p><strong>Email:</strong> jairojaramillopastorini@gmail.com</p>
+          <p><strong>Carrera:</strong> Ingeniería en ciberseguridad</p>
+          <p><strong>Intereses:</strong> Ciberseguridad, tecnología</p>
+        </aside>
+
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
-
-<header>
-    
- <h1>Jairo Jaramillo</h1>
-
-<nav>
- 
-<a href="#sobre_mi">Sobre mi</a>
- <a href="#habilidades">Habilidades</a>
- <a href="#proyectos">Proyectos</a>
- <a href="#contacto">Contacto</a>
- </nav>
- 
- <main> <article class="post">
- <h2> Hola, soy Jairo Jaramillo</h2>
- <p class="meta">Estudiante de ingenieria en ciberseguridad.</p>
- <p>Apasionado con los codigos y la ciberseguridad</p>
-</main>
-
-
-</header>
+</html>
