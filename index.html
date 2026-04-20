@@ -97,7 +97,7 @@
     <p>Tecnologías y competencias</p>
   </div>
 
-  <!-- TABLA -->
+
   <div class="tabla-habilidades">
     <table>
       <thead>
@@ -183,7 +183,9 @@
     </article>
   </div>
 
-  <section id="proyectos" class="proyectos">
+</section>
+
+<section id="proyectos" class="proyectos">
 
   <div class="titulo-seccion">
     <h2>Proyectos</h2>
@@ -218,3 +220,99 @@
 
 </div>
 </section>
+
+<section id="contacto" class="contacto">
+
+  <div class="titulo-seccion">
+    <h2>Contacto</h2>
+    <p>Envíame un mensaje</p>
+  </div>
+
+  <div class="contacto-contenedor">
+
+    <form class="formulario">
+      <div class="fila">
+        <div class="grupo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="grupo">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        </div>
+      </div>
+
+      <div class="grupo">
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto" required>
+          <option value="">Selecciona un asunto</option>
+          <option value="consulta">Consulta</option>
+          <option value="trabajo">Trabajo</option>
+          <option value="otro">Otro</option>
+        </select>
+      </div>
+
+      <div class="grupo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+      </div>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <aside class="info-contacto">
+      <h3>Información de contacto</h3>
+
+      <div class="info-item">
+        <span class="icono">✉️</span>
+        <p>jairojaramillopastorini@gmail.com</p>
+      </div>
+
+      <div class="info-item">
+        <span class="icono">📍</span>
+        <p>Coronel, Chile</p>
+      </div>
+
+      <div class="info-item">
+        <span class="icono">📞</span>
+        <p>+56 9 1234 5678</p>
+      </div>
+
+      <div class="info-item">
+        <span class="icono">🌐</span>
+        <p>github.com/PastoJP</p>
+      </div>
+    </aside>
+
+  </div>
+
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-contenido">
+
+    <div class="footer-logo">
+      <div class="logo-cuadro">JJ</div>
+      <span class="logo-texto">Jairo Jaramillo</span>
+    </div>
+
+    <div class="footer-redes">
+      <a href="https://github.com/PastoJP" target="_blank">GH</a>
+      <a href="#">LI</a>
+      <a href="#">TW</a>
+      <a href="#">IG</a>
+    </div>
+
+  </div>
+
+  <div class="footer-linea"></div>
+
+  <p class="footer-copy">
+    © 2026 Jairo Jaramillo. Todos los derechos reservados.
+  </p>
+</footer>
+
+</body>
+</html>
