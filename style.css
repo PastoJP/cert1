@@ -138,13 +138,13 @@ header {
 
 .titulo-seccion {
   text-align: center;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
 }
 
 .titulo-seccion h2 {
-  font-size: 42px;
+  font-size: 36px;
   color: #1f3550;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   display: inline-block;
   position: relative;
 }
@@ -161,7 +161,7 @@ header {
 
 .titulo-seccion p {
   color: #6b7280;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .sobre-contenedor {
@@ -233,40 +233,6 @@ header {
   color: #1f2937;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 18px;
-  }
-
-  .hero-contenedor {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-texto {
-    max-width: 100%;
-  }
-
-  .hero-imagen img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .sobre-contenedor {
-    grid-template-columns: 1fr;
-  }
-
-  .datos {
-    max-width: 420px;
-  }
-}
 
 .habilidades {
   background-color: #f3f5f7;
@@ -356,7 +322,6 @@ header {
   width: 90%;
   max-width: 1100px;
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
@@ -386,36 +351,6 @@ header {
   margin-bottom: 6px;
 }
 
-@media (max-width: 768px) {
-  .bloques-habilidades {
-    grid-template-columns: 1fr;
-  }
-
-  .tabla-habilidades {
-    overflow-x: auto;
-  }
-
-  .tabla-habilidades table {
-    min-width: 700px;
-  }
-}
-
-.titulo-seccion {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.titulo-seccion h2 {
-  font-size: 36px;
-  color: #1f3550;
-  margin-bottom: 10px;
-}
-
-.titulo-seccion p {
-  color: #6b7280;
-  font-size: 16px;
-}
-
 .proyectos {
   background-color: #f3f5f7;
   padding: 70px 0 80px;
@@ -435,7 +370,7 @@ header {
   background-color: #f9fafb;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   text-align: center;
 }
 
@@ -443,6 +378,7 @@ header {
   width: 100%;
   height: 180px;
   object-fit: cover;
+  display: block;
 }
 
 .card h3 {
@@ -603,7 +539,7 @@ header {
   justify-content: center;
   width: 45px;
   height: 45px;
-  background-color: rgba(255,255,255,0.15);
+  background-color: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
 }
 
@@ -622,4 +558,145 @@ header {
   text-align: center;
   font-size: 13px;
   color: #dbe3f0;
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .hero-contenedor {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-texto {
+    max-width: 100%;
+  }
+
+  .hero-imagen img {
+    width: 220px;
+    height: 220px;
+  }
+
+  .sobre-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .datos {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .bloques-habilidades {
+    grid-template-columns: 1fr;
+  }
+
+  .contenedor-proyectos {
+    flex-wrap: wrap;
+  }
+
+  .contacto-contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-contenido {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .fila {
+    grid-template-columns: 1fr;
+  }
+
+  .tabla-habilidades {
+    overflow-x: auto;
+  }
+
+  .tabla-habilidades table {
+    min-width: 700px;
+  }
+
+  .contenedor-proyectos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .hero-texto h1 {
+    font-size: 36px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 16px 20px;
+  }
+
+  .logo-texto {
+    font-size: 16px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero-texto h1 {
+    font-size: 30px;
+  }
+
+  .subtitulo {
+    font-size: 18px;
+  }
+
+  .hero-texto p,
+  .texto,
+  .titulo-seccion p,
+  .info-item p {
+    font-size: 14px;
+  }
+
+  .hero-imagen img {
+    width: 180px;
+    height: 180px;
+  }
+
+  .titulo-seccion h2 {
+    font-size: 26px;
+  }
+
+  .formulario button {
+    width: 100%;
+  }
+
+  .footer-redes {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
